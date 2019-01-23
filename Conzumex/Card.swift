@@ -33,7 +33,7 @@ class Card: UIView {
     
     func setupView() {
         
-        cardHeightExpanded = (Utility.shared().parentView.frame.height) - cardHeightCollapsed
+        cardHeightExpanded = (Utility.shared().parentView.frame.height) - cardHeightCollapsed - 50
         self.frame = CGRect(x: 5, y: (Utility.shared().parentView.frame.height) - cardHeightCollapsed - 20, width: (Utility.shared().parentView.frame.width) - 10, height: cardHeightCollapsed)
         self.clipsToBounds = true
         self.layer.cornerRadius = 12
