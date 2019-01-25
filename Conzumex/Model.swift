@@ -20,6 +20,7 @@ struct Plan {
     var day: String?
     var details: Details?
     var title: String?
+    var isExpanded: Bool?
 }
 
 struct Details {

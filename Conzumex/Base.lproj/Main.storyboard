@@ -10,20 +10,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Training View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conzumex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TrainingViewController" customModule="Conzumex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88580462995767817" green="1" blue="0.79627431291901685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-01-24 at 2.58.55 AM" translatesAutoresizingMaskIntoConstraints="NO" id="R6A-Fm-nSR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="walking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk1-2z-tKf">
+                                <rect key="frame" x="27" y="20" width="316" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-01-24 at 8.19.50 PM" translatesAutoresizingMaskIntoConstraints="NO" id="uSc-8u-SGk">
+                                <rect key="frame" x="25" y="49" width="27" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b1E-fP-jUZ"/>
+                                    <constraint firstAttribute="width" constant="27" id="pZe-P5-avj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30 Session - 5 Weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lo-eF-7mp">
+                                <rect key="frame" x="57" y="52" width="316" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="UOw-U5-3om"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uSc-8u-SGk" firstAttribute="leading" secondItem="Uk1-2z-tKf" secondAttribute="leading" constant="-2" id="3fN-TC-3HL"/>
+                            <constraint firstItem="uSc-8u-SGk" firstAttribute="top" secondItem="Uk1-2z-tKf" secondAttribute="bottom" id="bsV-As-HUu"/>
+                            <constraint firstItem="Uk1-2z-tKf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="dM4-XR-CtE"/>
+                            <constraint firstItem="Uk1-2z-tKf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p1m-cK-I7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uk1-2z-tKf" secondAttribute="trailing" constant="32" id="tB8-zx-zSR"/>
+                            <constraint firstItem="2lo-eF-7mp" firstAttribute="centerY" secondItem="uSc-8u-SGk" secondAttribute="centerY" id="vGD-zl-Hc5"/>
+                            <constraint firstItem="2lo-eF-7mp" firstAttribute="leading" secondItem="uSc-8u-SGk" secondAttribute="trailing" constant="5" id="vH6-nL-RXR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="-54.422788605697157"/>
+            <point key="canvasLocation" x="1072.8" y="-54.422788605697157"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screenshot 2019-01-24 at 2.58.55 AM" width="379" height="12"/>
+        <image name="Screenshot 2019-01-24 at 8.19.50 PM" width="84" height="90"/>
+    </resources>
 </document>
